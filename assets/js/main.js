@@ -47,3 +47,94 @@ function scrollActive() {
   });
 }
 window.addEventListener('scroll', scrollActive);
+
+// SHOW SCROLL TOP
+
+function scrollTop() {
+  const scrollTop = document.getElementById('scroll-top');
+  // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
+  if (this.scrollY >= 200) scrollTop.classList.add('show-scroll');
+  else scrollTop.classList.remove('show-scroll');
+}
+window.addEventListener('scroll', scrollTop);
+
+// DARK LIGHT THEME
+
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'bx-sun';
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () =>
+  themeButton.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove'](
+    iconTheme
+  );
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+  // Add or remove the dark / icon theme
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+});
+
+// Reduce the size and print on A4 sheet
+
+function scaleCV() {
+  document.body.classList.add('scale-cv');
+}
+
+// Remove the size when the CV is downloaded
+
+function removeScale() {
+  document.body.classList.remove('scale-cv');
+}
+
+// GENERATE PDF
+// PDF generated area
+let areaCv = document.getElementById('area-cv');
+
+let resumeButton = document.getElementById('resume-button');
+
+//Html2pdf options
+
+let opt = {
+  margin: 0,
+  filename: 'myResume.pdf',
+  image: { type: 'jpeg', quality: 0.98 },
+  html2canvas: { scale: 4 },
+  jsPDF: { format: 'A4', orientation: 'portrait' },
+};
+
+// Function to call areaCV and htm2pdf options
+function generateResume() {
+  html2pdf(areaCv, opt);
+}
+// When the button is clicked, it executes three functions
+resumeButton.addEventListener('click', () => {
+  // 1. The class .scale-cv is added to the body, where it reduces the size of document
+  scaleCV();
+
+  // 2. The pdf is generated
+  generateResume();
+
+  // 3. The scale-cv class is removed from the body after 5 seconds or return to normal size
+  setTimeout(removeScale, 4000);
+});
