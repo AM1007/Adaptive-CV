@@ -117,7 +117,7 @@ let resumeButton = document.getElementById('resume-button');
 
 let opt = {
   margin: 0,
-  filename: 'myResume.pdf',
+  filename: 'Motko_Andrew_Full-stack.pdf',
   image: { type: 'jpeg', quality: 1 },
   html2canvas: { scale: 4 },
   jsPDF: { format: 'A4', orientation: 'portrait' },
