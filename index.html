@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- BOX ICONS -->
+    <!------- BOX ICONS ------->
 
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
     />
 
-    <!-- STYLES -->
+    <!------- STYLES ------->
 
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -20,7 +20,7 @@
   </head>
   <body>
 
-                      <!-- HEADER -->
+    <!------- HEADER ------->
 
     <header class="l-header" id="header">
       <nav class="nav bd-container">
@@ -33,19 +33,33 @@
                 <i class="bx bx-home nav__icon"></i>Home
               </a>
             </li>
-
+            
             <li class="nav__item">
-              <a href="#profile" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>Profile
+              <a href="#tech-skills" class="nav__link">
+                <i class="bx bxs-component nav__icon"></i>Tech Skills
               </a>
             </li>
 
             <li class="nav__item">
-              <a href="#education" class="nav__link"> <i class='bx bx-book nav__icon' ></i></i>Education</a>
+              <a href="#soft-skills" class="nav__link">
+                <i class="bx bx-user nav__icon"></i>Soft Skills
+              </a>
             </li>
 
             <li class="nav__item">
-              <a href="#skills" class="nav__link"> <i class='bx bx-receipt nav__icon' ></i>skills</a>
+              <a href="#languages" class="nav__link"> <i class='bx bxl-audible nav__icon' ></i></i>Languages</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#summary" class="nav__link"> <i class='bx bx-briefcase nav__icon' ></i></i>Summary</a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#team-projects" class="nav__link"> <i class='bx bx-group nav__icon' ></i></i>Team projects</a>
+            </li>
+    
+            <li class="nav__item">
+              <a href="#individual-projects" class="nav__link"> <i class='bx bx-user-check nav__icon' ></i></i>Individual projects</a>
             </li>
 
             <li class="nav__item">
@@ -53,11 +67,7 @@
             </li>
 
             <li class="nav__item">
-              <a href="#certificates" class="nav__link"> <i class='bx bx-award nav__icon' ></i>Certificates</a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#references" class="nav__link"> <i class='bx bx-link-external nav__icon' ></i>References</a>
+              <a href="#education" class="nav__link"> <i class='bx bxs-graduation nav__icon' ></i></i>Education</a>
             </li>
           </ul>
         </div>
@@ -69,38 +79,32 @@
       </nav>
     </header> 
 
-    <main class="l-main bd-container">
+    <main class="bd-container">
 
-                      <!-- All elements within this div are generated in PDF  -->
+      <!-- All elements within this div are generated in PDF  -->
 
       <div class="resume" id="area-cv">
+
+        <!------- RESUME LEFT ------->
+
         <div class="resume__left">
 
-                      <!-- HOME -->
+          <!------- HOME ------->
 
           <section class="home" id="home">
             <div class="home__container section bd-grid">
               <div class="home__data bd-grid">
-                <img src="assets/img/perfil.jpg" alt="" class="home__img">
+                <img src="assets/img/perfil.jpg" alt="photo" class="home__img">
 
                 <h1 class="home__title">ANDREW <b>MOTKO</b></h1>
                 <h3 class="home__profession">Full-stack developer</h3>
-                  <!-- Button to download your CV saved in the PDF folder. Avaliable for mobile. -->
+
+                <!-- Button to download your CV saved in the PDF folder. Avaliable for mobile. -->
+
                 <div>
                   <a href="assets/pdf/ResumeCV.pdf"    class="home__button-movil">Download</a>
                 </div>
               </div>
-
-              <!-- <div class="home__adress bd-grid">
-                <span class="contacts__information">
-                  
-               </span>
-              
-                
-              
-
-              </div>
-            </div>  -->
 
             <!-- Theme change button -->
 
@@ -112,7 +116,7 @@
 
           </section>
 
-            <!-- CONTACTS -->
+          <!------- CONTACTS ------->
           
           <section class="contacts section">
             <h2 class="section-title">contacts</h2>
@@ -141,68 +145,11 @@
 
               <a class="contacts__link" href="https://www.google.com.ua/maps/@50.479104,30.6020352,11z?hl=en" target="_blank">
                 <i class='bx bx-map contacts__icon'></i> Kyiv, Ukraine
-              </a>
-         
+              </a>        
             </div>
           </section>
 
-            <!-- PROFILE -->
-
-          <!-- <section class="profile section" id="profile">
-            <h2 class="section-title">Profile</h2>
-
-            <p class="profile__description">I am a person, responsible with their work during working hours. Finish various technical and higher studies at large universities. I have several years of expirience and achivements in the labor field.</p>
-          </section> -->
-
-            <!-- EDUCATION -->
-          
-          <!-- <section class="education section" id="education">
-            <h2 class="section-title">Education</h2>
-
-            <div class="education__container bd-grid">
-
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">FULLSTACK DEVELOPER</h3>
-                  <span class="education__studies">University of studies</span>
-                  <span class="education__year">2010 - 2015</span>
-                </div>
-              </div>
-
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Energy management engineer</h3>
-                  <span class="education__studies">Kharkiv National University of Urban Economy</span>
-                  <span class="education__year">2016 - 2019</span>
-                </div>
-              </div>
-
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">MASTER IN UI/UX</h3>
-                  <span class="education__studies">Institute of studies</span>
-                  <span class="education__year">2019 - 2021</span>
-                </div>
-              </div>  
-            </div>
-          </section> -->
-
-            <!-- TECH SKILLS-->
+          <!------- TECH SKILLS ------->
 
           <section class="tech-skills section" id="tech-skills">
             <h2 class="section-title">tech skills</h2>
@@ -211,108 +158,98 @@
 
               <ul class="skills__data">
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Html
+                  <span class="circle"></span>Html
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>CSS3
+                  <span class="circle"></span>CSS3
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>SCSS
+                  <span class="circle"></span>SCSS
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Javascript
-                </li>
-
-              </ul>
-
-              <ul class="skills__data">
-
-                <li class="skills__name">
-                  <span class="skills__circle"></span>Responsive & Adaptive design
+                  <span class="circle"></span>Javascript
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Webpack / Parcel
+                  <span class="circle"></span>React & Styled-components
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>Git
+                  <span class="circle"></span>Responsive & Adaptive design
                 </li>
 
                 <li class="skills__name">
-                  <span class="skills__circle"></span>React & Styled-components
+                  <span class="circle"></span>Webpack / Parcel
                 </li>
-              </ul>
+
+                <li class="skills__name">
+                  <span class="circle"></span>Git
+                </li>
 
             </div>
           </section>
 
-            <!-- SOFT SKILLS -->
+          <!------- SOFT SKILLS ------->
 
-            <section class="skills section" id="soft-skills">
-              <h2 class="section-title">soft skills</h2>
+          <section class="skills section" id="soft-skills">
+            <h2 class="section-title">soft skills</h2>
   
-              <div class="skills__container bd-grid">
+            <div class="skills__container bd-grid">
   
-                <ul class="skills__data">
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Responsible
-                  </li>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="circle"></span>Responsible
+                </li>
   
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Diligent
-                  </li>
+                <li class="skills__name">
+                  <span class="circle"></span>Diligent
+                </li>
   
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Executive
-                  </li>
+                <li class="skills__name">
+                  <span class="circle"></span>Executive
+                </li>
   
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Comfortable
-                  </li>
-  
-                </ul>
-  
-              </div>
-            </section>
+                <li class="skills__name">
+                  <span class="circle"></span>Comfortable
+                </li> 
+              </ul>
+            </div>
+          </section>
 
+          <!------- LANGUAGES ------->
 
-            <!-- LANGUAGES -->
-
-            <section class="skills section" id="skills">
-              <h2 class="section-title">languages</h2>
+          <section class="skills section" id="languages">
+            <h2 class="section-title">languages</h2>
   
-              <div class="skills__container bd-grid">
+            <div class="skills__container bd-grid">
   
-                <ul class="skills__data">
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>English - B2
-                  </li>
+              <ul class="skills__data">
+                <li class="skills__name">
+                  <span class="circle"></span>English - B2
+                </li>
   
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Ukrainian - Native
-                  </li>
+                <li class="skills__name">
+                  <span class="circle"></span>Ukrainian - Native
+                </li>
   
-                  <li class="skills__name">
-                    <span class="skills__circle"></span>Russian - Masterfull
-                  </li>
-  
-                </ul>
-  
-              </div>
-            </section>
-
+                <li class="skills__name">
+                  <span class="circle"></span>Russian - Masterfull
+                </li> 
+              </ul> 
+            </div>
+          </section>
         </div>
+
+        <!------- RESUME RIGHT ------->
 
         <div class="resume__right">
 
+          <!------- SUMMARY ------->
 
-          <!-- SUMMARY -->
-
-          <section class="summary section">
+          <section class="summary section" id="summary">
             <h2 class="section-title">summary</h2>
               <div class="summary__container bd-grid">
                 <p class="summary__description">
@@ -321,9 +258,9 @@
               </div>
           </section>
 
-          <!-- TEAM PROJECTS -->
+          <!------- TEAM PROJECTS ------->
 
-          <section class="projects section" id="certificates">
+          <section class="projects section" id="team-projects">
             <h2 class="section-title">team projects</h2>
             <div class="projects__container bd-grid">
 
@@ -341,10 +278,12 @@
                     <li>[HTML, SCSS, JS, Animate.css, Rest API, Axios, Parcel,
                     Firebase]
                     </li>
-                   <li >Role:
+                   <li class="projects__role">Role:
 
                    </li>
-                   <li>Project provides a wide spectrum of movies. There is an
+                   <li>
+                    <span class="circle"></span>
+                    Project provides a wide spectrum of movies. There is an
                   authorisation written with the help of Firebase. After authorisation customers can create their personal libraries.
                    </li>
                   </ul>
@@ -361,10 +300,13 @@
 
                   <li>[HTML, SCSS, JS, Animate.css]
                   </li>
-                  <li >Role: Team Lead
+                  <li class="projects__role">Role: Team Lead
 
                   </li>
-                  <li>Ice Cream company site with enough animations for young clients.
+
+                  <li>
+                    <span class="circle"></span>
+                    Ice Cream company site with enough animations for young clients.
                   </li>
                 </ul>
               </div>
@@ -373,41 +315,44 @@
 
         <!-- INDIVIDUAL PROJECTS -->
 
-          <section class="projects section" id="certificates">
+          <section class="projects section" id="individual-projects">
             <h2 class="section-title">individual projects</h2>
             <div class="projects__container bd-grid">
 
               <div class="projects__content">
                 <div class="projects__item">
                   <h3 class = "section-subtitle">                 
-                    <a class="projects__title" href="#">Filmoteka
+                    <a class="projects__title" href="https://am1007.github.io/goit-markup-hw-08/">Web-studio
                     <span>
-                        <a class="projects__title" href="#"><i class='bx bxl-github projects__icon' ></i></a>
+                        <a class="projects__title" href="https://github.com/AM1007/goit-markup-hw-08"><i class='bx bxl-github projects__icon' ></i></a>
                       </span>
                     </a>
                   </h3>
                   <ul>
 
-                    <li>[HTML, SCSS, JS, Animate.css, Rest API, Axios, Parcel,
-                    Firebase]
+                    <li>[HTML, SCSS, JS]
                     </li>
-                    <li>Project provides a wide spectrum of movies. There is an authorisation written with the help of Firebase. After authorisation customers can create their personal libraries.
+                    <li>
+                      <span class="circle"></span>
+                      Aim of this project is to make it easier for customers to get in touch with a company and find out about it's services.
                     </li>
                   </ul>
               </div>
 
               <div class="projects__item">
                 <h3 class = "section-subtitle">                 
-                  <a class="projects__title" href="https://am1007.github.io/parcel-project-group-21/" target="_blank">Ice Cream
+                  <a class="projects__title" href="https://am1007.github.io/Adaptive-CV/" target="_blank">Adaptive CV
                   
                   </a>
-                  <a class="projects__title" href="https://github.com/AM1007/parcel-project-group-21" target="_blank"><i class='bx bxl-github projects__icon' ></i></a>
+                  <a class="projects__title" href="https://github.com/AM1007/Adaptive-CV" target="_blank"><i class='bx bxl-github projects__icon' ></i></a>
                 </h3>
                 <ul>
 
-                  <li>[HTML, SCSS, JS, Animate.css]</li>
+                  <li>[HTML, SCSS, JS]</li>
 
-                  <li>Ice Cream company site with enough animations for young clients.</li>
+                  <li>
+                    <span class="circle"></span>
+                    Layout adapted for mobile devices.</li>
                 </ul>
               </div>
             </div>
@@ -415,142 +360,66 @@
 
           <!-- EXPERIENCE -->
 
-          <!-- <section class="experience section" id="experience">
+          <section class="experience section" id="experience">
             <h2 class="section-title">Experience</h2>
 
             <div class="experience__container bd-grid">
-
               <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span>
-                </div>
+
 
                 <div class="experience__data bd-grid">
-                  <h3 class="experience__title">MASTER OF DESIGN</h3>
-                  <span class="experience__company">From 2013 to 2015</span>
-                  <p class="experience__description">Responsible for localization of security ecosysetem software. Creation, editing and maintenance of operational documentation. Translation of technical documentation for equipment from leading industry suppliers.</p>
+                  <div class="experience__point">
+                    <div>
+                      <h3 class="experience__title">STA Electronika, ltd</h3>
+                      <span class="experience__period">From 2012 to 2022</span>
+                      <p class="experience__role">Technical Writer</p>
+                    </div>
+                    
+                  </div>
+                  <p class="experience__description">
+                    <span class="circle"></span>Responsible for localization of security ecosysetem software. 
+                    <br><span class="circle"></span>Creation, editing and maintenance of operational documentation. 
+                    <br><span class="circle"></span>Translation of technical documentation for equipment from leading industry suppliers.</p>
                 </div>
               </div>
 
               <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span> -->
-                <!-- </div>
-  
-                <div class="experience__data bd-grid">
-                  <h3 class="experience__title">UI / UX DESIGN AREA</h3>
-                  <span class="experience__company">From 2017 to 2019 | Tech Soft</span>
-                  <p class="experience__description">Responsible for localization of security ecosysetem software.  
-                      Creation, editing and maintenance of operational documentation.
-                      Translation of technical documentation for equipment from leading industry suppliers.</p>
-                </div>
-
-              </div>
+                <div class="experience__data bd-grid">            
+                  <div class="experience__point">
+                    <h3 class="experience__title">Lanit-Iv Cable Systems</h3>
+                    <span class="experience__period">From 2005 to 2010</span>
+                    <p class="experience__role">Security systems engineer</p>
+                  </div>
+                  
+                  <p class="experience__description">
+                    <span class="circle"></span>Сommissioning of security systems at facilities of any protection category.</p>
+                </div>               
+              </div>                                          
             </div>            
-          </section> -->
+          </section>
 
-          <!-- CERTIFICATES -->
+            <!-- EDUCATION -->
 
-          <!-- <section class="sertificates section" id="certificates">
-            <h2 class="section-title">Certificates</h2>
-            <div class="certificate__container bd-grid">
+          <section class="education section" id="education">
+            <h2 class="section-title">education</h2>
 
-              <div class="certificate__content">
-                <h3 class="certificate__title">Certified for complience in the work area (2012)</h3>
-                <p class="certificate__description">For meeting the expectations of leading the team to work the specified task in the labor field.</p>
-              </div>
-
-              <div class="certificate__content">
-                <h3 class="certificate__title">Certificate of attendence on computer technology (2012)</h3>
-                <p class="certificate__description">For meeting the expectations of leading the team to work the specified task in the labor field.</p>
-              </div>
-
-              <div class="certificate__content">
-                <h3 class="certificate__title">Certified for complience in the work area (2012)</h3>
-                <p class="certificate__description">For meeting the expectations of leading the team to work the specified task in the labor field.</p>
-              </div>
-
-            </div> 
-          </section> -->
-
-          <!-- REFERENCES -->
-
-          <!-- <section class="references section" id="references">
-            <h2 class="section-title">References</h2>
-
-            <div class="references__container bd-grid">
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Sr. Director</span>
-                <h3 class="references__title">Mr. Doe</h3>
-                <ul class="references__contact">
-                  <li>phone: 777777777</li>
-                  <li>Email: user@email</li>
-                </ul>
+            <div class="education__container bd-grid">
+              <div class="education__content ">
+                
+                <h3 class="education__title">IT School GoIT</h3>
+                <span class="education__period">2022-2023</span>
+                <p class="education__speciality">Full-stack developer</p>
               </div>
            
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Mag. Director</span>
-                <h3 class="references__title">Mr. Robbinson Bass</h3>
-                <ul class="references__contact">
-                  <li>phone: 777777777</li>
-                  <li>Email: user@email</li>
-                </ul>
+              <div class="education__content ">
+                
+                <h3 class="education__title">Kharkiv National University of Urban Economy</h3>
+                <span class="education__period">2000 - 2004</span>
+                <p class="education__speciality">Energy management engineer</p>
               </div>
             </div>
-          </section> -->
+          </section>
 
-          <!-- LANGUAGES -->
-          <!-- <section class="languages section">
-            <h2 class="section-title">Languages</h2>
-
-            <div class="languages__container">
-              <div class="languages__content bd-grid">
-                <li class="languages__name">
-                  <span class="languages__circle"></span>English (B2)
-                </li>
-
-                <li class="languages__name">
-                  <span class="languages__circle"></span>Ukrainian (Native)
-                </li>
-
-                <li class="languages__name">
-                  <span class="languages__circle"></span>Russian (Masterfull)
-                </li>
-
-              </div>
-            </div>
-          </section> -->
-
-          <!-- INTERESTS -->
-
-          <!-- <section class="interests section">
-            <h2 class="section-title">Interests</h2>
-
-            <div class="interests__container bd-grid">
-              <div class="interests__content">
-                <i class='bx bx-book-open interests__icon' ></i>
-                <span class="interests__name">Reading</span>
-              </div>
-
-              <div class="interests__content">
-                <i class='bx bx-run interests__icon' ></i>
-                <span class="interests__name">Running</span>
-              </div>
-
-              <div class="interests__content">
-                <i class='bx bx-car interests__icon' ></i>
-                <span class="interests__name">Driving</span>
-              </div>
-
-              <div class="interests__content">
-                <i class='bx bxs-plane-alt interests__icon' ></i>
-                <span class="interests__name">Flying</span>
-              </div>
-
-            </div>
-          </section> -->
         </div>
       </div>      
     </main>
